@@ -20,12 +20,12 @@ export default function EnterUser() {
         { region: "TH", route: "TH2" },
         { region: "VN", route: "VN2" },
     ];
-    const [summonerId, setSummonerId] = useState("");
+    const [summonerName, setSummonerName] = useState("");
     const [region, setRegion] = useState(REGIONS[0].route);
     const navigate = useNavigate();
 
     function findUser(e: FormEvent) {
-        navigate(`/profile/?region=${region}&summonerId=${summonerId}`);
+        navigate(`/profile/?region=${region}&summonerName=${summonerName}`);
     }
 
     return (
@@ -40,8 +40,8 @@ export default function EnterUser() {
             <input
                 type="text"
                 placeholder="Summoner name"
-                name="summonerId"
-                onChange={(e) => setSummonerId(e.target.value)}
+                name="summonerName"
+                onChange={(e) => setSummonerName(e.target.value)}
             ></input>
             <input type="submit" />
         </form>
