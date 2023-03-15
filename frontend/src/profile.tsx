@@ -1,33 +1,16 @@
 import { useEffect, useState } from "react";
 import { ENDPOINT } from "./appSettings";
+import League from "./components/league";
+import { getLeagueData } from "./getUserData";
 
 export default function Profile() {
-    const [summonerName, setSummonerName] = useState("");
-    const [region, setRegion] = useState("");
+    const [leagueData, setLeagueData] = useState();
 
     useEffect(() => {
-        const queryString = window.location.search;
-        const urlParams = new URLSearchParams(queryString);
-        setRegion(urlParams.get("region") || "");
-        setSummonerName(urlParams.get("summonerName") || "");
+        const fetchLeagueData = async () =>
+            setLeagueData(await getLeagueData());
+        fetchLeagueData();
     }, []);
 
-    useEffect(() => {
-        if (region != "" && summonerName != "") {
-            getProfileData();
-        }
-    }, [region, summonerName]);
-
-    async function getProfileData() {
-        console.log(region, summonerName);
-        await fetch(
-            ENDPOINT.concat(
-                `/match-history?region=${region}&summonerName=${summonerName}`
-            )
-        )
-            .then((res) => res.json())
-            .then((data) => console.log(data));
-    }
-
-    return <div>profile</div>;
+    return <League leagueData={leagueData} />;
 }

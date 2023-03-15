@@ -8,7 +8,7 @@ app.use(cors());
 const RIOT_API_KEY = "RGAPI-26e261e4-6b8f-4344-bc5b-b1b2b78a9996";
 
 // Req takes summonerId and region
-app.get("/match-history", async (req, res) => {
+app.get("/league", async (req, res) => {
     const summoner = await getSummoner(
         req.query.region?.toString(),
         req.query.summonerName?.toString()
@@ -23,7 +23,25 @@ app.get("/match-history", async (req, res) => {
         })
         .catch((err) => console.log(err));
     console.log(riotResponse[0]);
-    res.status(200).json(riotResponse[0]);
+    if (riotResponse.length > 0) {
+        res.status(200).json(riotResponse[0]);
+    } else {
+        res.status(200).json({
+            leagueId: null,
+            queueType: "RANKED_TFT",
+            tier: "PROVISIONAL",
+            rank: null,
+            summonerId: summoner.id,
+            summonerName: summoner.name,
+            leaguePoints: 0,
+            wins: 0,
+            losses: 0,
+            veteran: false,
+            inactive: false,
+            freshBlood: false,
+            hotStreak: false,
+        });
+    }
 });
 
 async function getSummoner(region?: string, summonerName?: string) {
