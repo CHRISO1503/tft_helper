@@ -10,6 +10,7 @@ export async function getLeagueData() {
         )
             .then((res) => res.json())
             .then((data) => data);
+        console.log(leagueData);
         return leagueData;
     } catch (err) {
         return console.log(err);

@@ -1,4 +1,4 @@
-import EnterUser from "./components/enterUser";
+import EnterUser from "./components/molecules/enterUser";
 
 export default function Home() {
     return <EnterUser />;

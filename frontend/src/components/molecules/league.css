@@ -1,0 +1,21 @@
+.league {
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.league-info {
+    display: flex;
+    justify-content: space-between;
+}
+.league-info > p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.league-title {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+}

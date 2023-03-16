@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import { ENDPOINT } from "./appSettings";
-import League from "./components/league";
+import League from "./components/molecules/league";
 import { getLeagueData } from "./getUserData";
 
 export default function Profile() {
