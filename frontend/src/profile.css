@@ -1,0 +1,5 @@
+.profile-container > div {
+    background-color: pink;
+    padding: 10px;
+    border-radius: 10px;
+}

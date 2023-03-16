@@ -3,7 +3,7 @@ import "./league.css";
 export default function League({ leagueData }: { leagueData: any }) {
     return (
         <div className="league">
-            {leagueData !== undefined ? (
+            {leagueData ? (
                 <>
                     <div className="league-title">
                         {leagueData.summonerName}
@@ -11,10 +11,12 @@ export default function League({ leagueData }: { leagueData: any }) {
                     <div className="league-info">
                         <p>Rank: </p>
                         <p>
-                            {`${leagueData.tier.substring(0, 3)}
-                                ${leagueData.rank || ""} ${
-                                leagueData.leaguePoints
-                            }`}
+                            {`${
+                                leagueData.tier === "PROVISIONAL"
+                                    ? "NaN"
+                                    : leagueData.tier.substring(0, 3)
+                            } ${leagueData.rank === null ? "" : leagueData.rank}
+                            ${leagueData.leaguePoints}`}
                             LP
                         </p>
                     </div>
@@ -35,7 +37,7 @@ export default function League({ leagueData }: { leagueData: any }) {
                     </div>
                 </>
             ) : (
-                <></>
+                <div>Loading profile...</div>
             )}
         </div>
     );

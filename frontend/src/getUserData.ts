@@ -10,8 +10,23 @@ export async function getLeagueData() {
         )
             .then((res) => res.json())
             .then((data) => data);
-        console.log(leagueData);
         return leagueData;
+    } catch (err) {
+        return console.log(err);
+    }
+}
+
+export async function getMatchHistory(start: number) {
+    const { region, summonerName } = regionAndSummonerName();
+    try {
+        const matchHistory = await fetch(
+            ENDPOINT.concat(
+                `/match-history?region=${region}&summonerName=${summonerName}&start=${start}`
+            )
+        )
+            .then((res) => res.json())
+            .then((data) => data);
+        return matchHistory;
     } catch (err) {
         return console.log(err);
     }

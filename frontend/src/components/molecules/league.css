@@ -1,9 +1,6 @@
 .league {
     display: flex;
     flex-direction: column;
-    background-color: pink;
-    padding: 10px;
-    border-radius: 5px;
 }
 
 .league-info {
@@ -11,8 +8,8 @@
     justify-content: space-between;
 }
 .league-info > p {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .league-title {
     display: flex;

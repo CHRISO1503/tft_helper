@@ -1,0 +1,11 @@
+.match {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.date {
+    grid-column: 1;
+}
+.time {
+    grid-column: 2;
+}
