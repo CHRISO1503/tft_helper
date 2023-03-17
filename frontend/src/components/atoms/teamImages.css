@@ -1,10 +1,32 @@
 .team-images {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow-x: auto;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-radius: 10px;
 }
-.champion {
+.champion-image-container {
     width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-inline: 3px;
+}
+.overflow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    background-color: darkgrey;
+    color: pink;
 }
 .champion-image {
     width: 100%;
+}
+
+@media (min-width: 768px) {
+    .team-images {
+        grid-column-end: 2;
+    }
 }

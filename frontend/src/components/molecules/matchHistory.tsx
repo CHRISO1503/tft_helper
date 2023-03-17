@@ -3,7 +3,6 @@ import "./matchHistory.css";
 import TeamImages from "../atoms/teamImages";
 
 export default function matchHistory({ matchHistory }: { matchHistory: any }) {
-    console.log(matchHistory);
     return (
         <div className="matchHistory">
             {matchHistory ? (

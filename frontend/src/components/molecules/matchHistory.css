@@ -9,3 +9,9 @@
 .time {
     grid-column: 3;
 }
+
+@media (min-width: 768px) {
+    .match {
+        grid-template-columns: 505px 1fr 1fr;
+    }
+}
