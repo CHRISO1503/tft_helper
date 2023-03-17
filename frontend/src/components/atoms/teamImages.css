@@ -1,0 +1,10 @@
+.team-images {
+    display: flex;
+    flex-direction: row;
+}
+.champion {
+    width: 50px;
+}
+.champion-image {
+    width: 100%;
+}

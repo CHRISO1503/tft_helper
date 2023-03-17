@@ -1,9 +1,10 @@
 export function getDateFromUnix(timestamp: number) {
+    const leadingZero = (number: number) =>
+        number < 10 ? "0" + number : number;
     const unix = new Date(timestamp);
-    const date = unix.getDate() < 10 ? "0" + unix.getDate() : unix.getDate();
-    const month =
-        unix.getMonth() < 10 ? "0" + unix.getMonth() : unix.getMonth();
-    const hours = unix.getHours();
-    const minutes = unix.getMinutes();
+    const date = leadingZero(unix.getDate());
+    const month = leadingZero(unix.getMonth() + 1);
+    const hours = leadingZero(unix.getHours());
+    const minutes = leadingZero(unix.getMinutes());
     return { date: date + "/" + month, time: hours + ":" + minutes };
 }

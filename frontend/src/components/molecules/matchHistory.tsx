@@ -1,5 +1,6 @@
 import { getDateFromUnix } from "./matchHistory.hooks";
 import "./matchHistory.css";
+import TeamImages from "../atoms/teamImages";
 
 export default function matchHistory({ matchHistory }: { matchHistory: any }) {
     console.log(matchHistory);
@@ -14,6 +15,12 @@ export default function matchHistory({ matchHistory }: { matchHistory: any }) {
                         <div className="time">
                             {getDateFromUnix(match.info.game_datetime).time}
                         </div>
+                        <TeamImages
+                            champions={
+                                match.info.participants[match.info.playerNumber]
+                                    .units
+                            }
+                        />
                     </div>
                 ))
             ) : (
