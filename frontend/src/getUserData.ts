@@ -26,6 +26,7 @@ export async function getMatchHistory(start: number) {
         )
             .then((res) => res.json())
             .then((data) => data);
+        console.log(matchHistory);
         return matchHistory;
     } catch (err) {
         return console.log(err);

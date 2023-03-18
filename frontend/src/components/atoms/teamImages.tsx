@@ -1,7 +1,11 @@
-import fileAccess from "../../fileAccess.json";
+import tftData from "../../tftData.json";
+import ChampionTierStars from "./championTierStars";
 import "./teamImages.css";
 
-type Champion = { character_id: keyof typeof fileAccess.champions[0] };
+type Champion = {
+    tier: number;
+    character_id: keyof typeof tftData.champions[0];
+};
 
 export default function TeamImages({ champions }: { champions: Champion[] }) {
     function championDisplay(champion: Champion, index: number) {
@@ -24,8 +28,12 @@ export default function TeamImages({ champions }: { champions: Champion[] }) {
                     <img
                         className="champion-image"
                         src={`/champions${
-                            fileAccess.champions[0][champion.character_id]
+                            tftData.champions[0][champion.character_id].path
                         }`}
+                    />
+                    <ChampionTierStars
+                        starNumber={champion.tier}
+                        cost={tftData.champions[0][champion.character_id].cost}
                     />
                 </div>
             );

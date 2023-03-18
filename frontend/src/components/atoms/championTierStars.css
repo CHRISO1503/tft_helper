@@ -1,0 +1,41 @@
+.stars-container {
+    height: 40%;
+    width: 80%;
+    transform: translate(0, -50%);
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    border-radius: 7px;
+}
+.star {
+    height: 30%;
+    aspect-ratio: 1/1;
+    border: 1px solid black;
+    transform: rotate(45deg);
+    margin-top: 5%;
+    margin-inline: 5%;
+}
+.tier1 {
+    background-color: orangered;
+}
+.tier2 {
+    background-color: white;
+}
+.tier3 {
+    background-color: gold;
+}
+.cost1 {
+    background-color: lightgray;
+}
+.cost2 {
+    background-color: green;
+}
+.cost3 {
+    background-color: blue;
+}
+.cost4 {
+    background-color: violet;
+}
+.cost5 {
+    background-color: gold;
+}

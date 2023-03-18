@@ -1,0 +1,83 @@
+{
+    "champions": [
+        {
+            "TFT8_Alistar": { "path": "/set8.0/TFT8_Alistar.jpg", "cost": 3 },
+            "TFT8_Annie": { "path": "/set8.0/TFT8_Annie.jpg", "cost": 2 },
+            "TFT8_Aphelios": { "path": "/set8.0/TFT8_Aphelios.jpg", "cost": 5 },
+            "TFT8_Ashe": { "path": "/set8.0/TFT8_Ashe.jpg", "cost": 2 },
+            "TFT8_AurelionSol": {
+                "path": "/set8.0/TFT8_AurelionSol.jpg",
+                "cost": 4
+            },
+            "TFT8_BelVeth": { "path": "/set8.0/TFT8_BelVeth.jpg", "cost": 4 },
+            "TFT8_Blitzcrank": {
+                "path": "/set8.0/TFT8_Blitzcrank.jpg",
+                "cost": 1
+            },
+            "TFT8_Camille": { "path": "/set8.0/TFT8_Camille.jpg", "cost": 2 },
+            "TFT8_ChoGath": { "path": "/set8.0/TFT8_ChoGath.jpg", "cost": 3 },
+            "TFT8_Draven": { "path": "/set8.0/TFT8_Draven.jpg", "cost": 2 },
+            "TFT8_Ekko": { "path": "/set8.0/TFT8_Ekko.jpg", "cost": 4 },
+            "TFT8_Ezreal": { "path": "/set8.0/TFT8_Ezreal.jpg", "cost": 2 },
+            "TFT8_Fiddlesticks": {
+                "path": "/set8.0/TFT8_Fiddlesticks.jpg",
+                "cost": 5
+            },
+            "TFT8_Fiora": { "path": "/set8.0/TFT8_Fiora.jpg", "cost": 2 },
+            "TFT8_Galio": { "path": "/set8.0/TFT8_Galio.jpg", "cost": 1 },
+            "TFT8_Gangplank": {
+                "path": "/set8.0/TFT8_Gangplank.jpg",
+                "cost": 1
+            },
+            "TFT8_Janna": { "path": "/set8.0/TFT8_Janna.jpg", "cost": 5 },
+            "TFT8_Jax": { "path": "/set8.0/TFT8_Jax.jpg", "cost": 3 },
+            "TFT8_Jinx": { "path": "/set8.0/TFT8_Jinx.jpg", "cost": 2 },
+            "TFT8_Kaisa": { "path": "/set8.0/TFT8_Kaisa.jpg", "cost": 3 },
+            "TFT8_Kayle": { "path": "/set8.0/TFT8_Kayle.jpg", "cost": 1 },
+            "TFT8_Leblanc": { "path": "/set8.0/TFT8_Leblanc.jpg", "cost": 3 },
+            "TFT8_LeeSin": { "path": "/set8.0/TFT8_LeeSin.jpg", "cost": 2 },
+            "TFT8_Leona": { "path": "/set8.0/TFT8_Leona.jpg", "cost": 5 },
+            "TFT8_Lulu": { "path": "/set8.0/TFT8_Lulu.jpg", "cost": 2 },
+            "TFT8_Lux": { "path": "/set8.0/TFT8_Lux.jpg", "cost": 1 },
+            "TFT8_Malphite": { "path": "/set8.0/TFT8_Malphite.jpg", "cost": 2 },
+            "TFT8_MissFortune": {
+                "path": "/set8.0/TFT8_MissFortune.jpg",
+                "cost": 4
+            },
+            "TFT8_Mordekaiser": {
+                "path": "/set8.0/TFT8_Mordekaiser.jpg",
+                "cost": 5
+            },
+            "TFT8_Nasus": { "path": "/set8.0/TFT8_Nasus.jpg", "cost": 1 },
+            "TFT8_Nilah": { "path": "/set8.0/TFT8_Nilah.jpg", "cost": 3 },
+            "TFT8_Nunu": { "path": "/set8.0/TFT8_Nunu.jpg", "cost": 5 },
+            "TFT8_Poppy": { "path": "/set8.0/TFT8_Poppy.jpg", "cost": 1 },
+            "TFT8_Rammus": { "path": "/set8.0/TFT8_Rammus.jpg", "cost": 3 },
+            "TFT8_Rell": { "path": "/set8.0/TFT8_Rell.jpg", "cost": 2 },
+            "TFT8_Renekton": { "path": "/set8.0/TFT8_Renekton.jpg", "cost": 1 },
+            "TFT8_Riven": { "path": "/set8.0/TFT8_Riven.jpg", "cost": 3 },
+            "TFT8_Samira": { "path": "/set8.0/TFT8_Samira.jpg", "cost": 4 },
+            "TFT8_Sejuani": { "path": "/set8.0/TFT8_Sejuani.jpg", "cost": 4 },
+            "TFT8_Senna": { "path": "/set8.0/TFT8_Senna.jpg", "cost": 3 },
+            "TFT8_Sett": { "path": "/set8.0/TFT8_Sett.jpg", "cost": 4 },
+            "TFT8_Sivir": { "path": "/set8.0/TFT8_Sivir.jpg", "cost": 2 },
+            "TFT8_Sona": { "path": "/set8.0/TFT8_Sona.jpg", "cost": 3 },
+            "TFT8_Soraka": { "path": "/set8.0/TFT8_Soraka.jpg", "cost": 4 },
+            "TFT8_Sylas": { "path": "/set8.0/TFT8_Sylas.jpg", "cost": 1 },
+            "TFT8_Syndra": { "path": "/set8.0/TFT8_Syndra.jpg", "cost": 5 },
+            "TFT8_Taliyah": { "path": "/set8.0/TFT8_Taliyah.jpg", "cost": 4 },
+            "TFT8_Talon": { "path": "/set8.0/TFT8_Talon.jpg", "cost": 1 },
+            "TFT8_Urgot": { "path": "/set8.0/TFT8_Urgot.jpg", "cost": 5 },
+            "TFT8_Vayne": { "path": "/set8.0/TFT8_Vayne.jpg", "cost": 3 },
+            "TFT8_Velkoz": { "path": "/set8.0/TFT8_Velkoz.jpg", "cost": 3 },
+            "TFT8_Vi": { "path": "/set8.0/TFT8_Vi.jpg", "cost": 2 },
+            "TFT8_Viego": { "path": "/set8.0/TFT8_Viego.jpg", "cost": 4 },
+            "TFT8_WuKong": { "path": "/set8.0/TFT8_WuKong.jpg", "cost": 1 },
+            "TFT8_Yasuo": { "path": "/set8.0/TFT8_Yasuo.jpg", "cost": 2 },
+            "TFT8_Yuumi": { "path": "/set8.0/TFT8_Yuumi.jpg", "cost": 2 },
+            "TFT8_Zac": { "path": "/set8.0/TFT8_Zac.jpg", "cost": 4 },
+            "TFT8_Zed": { "path": "/set8.0/TFT8_Zed.jpg", "cost": 4 },
+            "TFT8_Zoe": { "path": "/set8.0/TFT8_Zoe.jpg", "cost": 3 }
+        }
+    ]
+}

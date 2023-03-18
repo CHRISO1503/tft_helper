@@ -8,7 +8,9 @@
 }
 .time {
     grid-column: 3;
+    text-align: right;
 }
+
 
 @media (min-width: 768px) {
     .match {
