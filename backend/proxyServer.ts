@@ -2,10 +2,11 @@ import express from "express";
 import cors from "cors";
 import axios from "axios";
 
+require("dotenv").config();
 const PORT = 4000;
 const app = express();
 app.use(cors());
-const RIOT_API_KEY = "RGAPI-26e261e4-6b8f-4344-bc5b-b1b2b78a9996";
+const RIOT_API_KEY = process.env.RIOT_API_KEY;
 
 // Parameters: region, summonerName
 app.get("/league", async (req, res) => {

@@ -21,6 +21,7 @@
 
 .date {
     grid-column: 1;
+    margin-inline: 5px;
 }
 .placement {
     text-align: center;
@@ -28,6 +29,7 @@
 .time {
     grid-column: 3;
     text-align: right;
+    margin-inline: 5px;
 }
 
 @media (min-width: 768px) {

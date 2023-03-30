@@ -79,5 +79,28 @@
             "TFT8_Zed": { "path": "/set8.0/TFT8_Zed.jpg", "cost": 4 },
             "TFT8_Zoe": { "path": "/set8.0/TFT8_Zoe.jpg", "cost": 3 }
         }
-    ]
+    ],
+    "items": {
+        "TFT_item_BFSword": "/components/BFSword.png",
+        "TFT_Item_ChainVest": "/components/ChainVest.png",
+        "TFT_Item_Zephyr": "/standard/Zephyr.png",
+        "TFT_Item_RabadonsDeathcap": "/standard/RabadonsDeathcap.png",
+        "TFT_Item_Deathblade": "/standard/Deathblade.jpg",
+        "TFT_Item_LastWhisper": "/standard/LastWhisper.png",
+        "TFT_Item_GuinsoosRageblade": "/standard/GuinsoosRageblade.jpg",
+        "TFT_Item_ThiefsGloves": "/standard/ThiefsGloves.png",
+        "TFT_Item_Chalice": "/standard/ChaliceOfPower.png",
+        "TFT_Item_RedBuff": "/standard/SunfireCape.png",
+        "TFT_Item_JeweledGauntlet": "/standard/JeweledGauntlet.jpg",
+        "TFT_Item_SpearOfShojin": "/standard/SpearOfShojin.png",
+        "TFT_Item_StatikkShiv": "/standard/StatikkShiv.png",
+        "TFT_Item_GargoyleStoneplate": "/standard/GargoyleStoneplate/png",
+        "TFT_Item_WarmogsArmor": "/standard/WarmogsArmor.png",
+        "TFT_Item_InfinityEdge": "/standard/InfinityEdge.png",
+        "TFT_Item_Quicksilver": "/standard/Quicksilver.png",
+        "TFT_Item_RunaansHurricane": "/standard/RunaansHurricane.png",
+        "TFT_Item_IonicSpark": "/standard/IonicSpark.png",
+        "TFT_Item_Morellonomicon":"/standard/Morellonomicon.png",
+        "":""
+    }
 }

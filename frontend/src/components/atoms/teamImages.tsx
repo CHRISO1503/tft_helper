@@ -1,8 +1,10 @@
 import tftData from "../../tftData.json";
+import ChampionItems from "./championItems";
 import ChampionTierStars from "./championTierStars";
 import "./teamImages.css";
 
 type Champion = {
+    itemNames: string[];
     tier: number;
     character_id: keyof typeof tftData.champions[0];
 };
@@ -35,6 +37,7 @@ export default function TeamImages({ champions }: { champions: Champion[] }) {
                         starNumber={champion.tier}
                         cost={tftData.champions[0][champion.character_id].cost}
                     />
+                    <ChampionItems items={champion.itemNames} />
                 </div>
             );
         }
